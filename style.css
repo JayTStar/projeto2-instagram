@@ -1,0 +1,151 @@
+body{
+    background-color: #E5E5E5;
+}
+header{
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+header #logo{
+    width: 103px;
+    height: 29px;
+}
+header .imagensTopo{
+    width: 22px;
+    height: 22px;
+}
+header #barraHorizontal{
+    width: 1px;
+    height: 22px;
+    background-color: #DBDBDB;
+}
+header #left{
+    width: 146px;
+    display: flex;
+    justify-content: space-between;
+}
+header #barraPesquisa{
+    width: 215px;
+    height: 28px;
+    background-color: #FAFAFA;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header #right{
+    width: 148px;
+    display: flex;
+    justify-content: space-between;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 54px;
+}
+
+.stories{
+    width: 614px;
+    height: 118px;
+    margin-top: 34px;
+    margin-right: 200px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.posts{
+    width: 614px;
+    height: auto;
+    background-color: red;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.post{
+    /* position: absolute; */
+    width: 614px;
+    height: 749px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 30px 0;
+}
+.sidebar{
+    background-color: blue;
+    /* background-color: rgba(255, 255, 255, 0); */
+    width: 293px;
+    height: 500px;
+    position: fixed;
+    top: 111px;
+    right: 5vw;
+}
+.suggestionUser{
+    margin: 10px 0;
+    background-color: purple;
+    width: 100%;
+    height: 32px;
+    display: flex;
+}
+.suggestionUser img{
+    /* position: absolute; */
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+@media(max-width: 935px){
+    .sidebar{
+        display: none;
+    }
+    .stories{
+        margin-right: 0;
+    }
+    .posts{
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 614px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header #logo{
+        display: block;
+        width: 103px;
+        height: 29px;
+    }
+    header #right{
+        display: none;
+    }
+    header #left{
+        display: none;
+    }
+    header #barraPesquisa{
+        display: none;
+    }
+    .stories{
+        width: 100%;
+        margin-top: 0;
+    }
+    .posts{
+        width: 100%;
+    }
+}
