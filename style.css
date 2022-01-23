@@ -1,0 +1,320 @@
+body{
+    background-color: #E5E5E5;
+    font-family: Roboto;
+}
+
+/* Estilo do Topo */
+
+header{
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+header #barraHorizontal{
+    width: 1px;
+    height: 22px;
+    background-color: #DBDBDB;
+}
+header #left{
+    width: 146px;
+    display: flex;
+    justify-content: space-between;
+}
+header #barraPesquisa{
+    width: 215px;
+    height: 28px;
+    background-color: #FAFAFA;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header #right{
+    width: 160px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Ajuste do conteúdo da Página */
+
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 54px;
+}
+
+/* Estilo dos Stories */
+
+.stories{
+    position: relative;
+    width: 614px;
+    height: 118px;
+    margin-top: 34px;
+    margin-right: 200px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.stories img{
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+    z-index: 3;
+}
+.stories #seta{
+    font-size: 26px;
+    position: absolute;
+    top: 46px;
+    bottom: 46px;
+    right: 9px;
+    color: white;
+}
+
+/* Estilo dos posts */
+
+#posts{
+    width: 614px;
+    height: auto;
+    margin-right: 200px;
+    z-index: 3;
+}
+.post{
+    width: 614px;
+    height: 749px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin: 30px 0;
+    position: relative;
+}
+.post .profile{
+    width: 100%;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    padding-left: 17px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.post .profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+.post .imagem{
+    width: 612px;
+    height: 612px;
+    margin: 0 1px;
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagem img{
+    max-width: 612px;
+    max-height: 612px;
+    width: fit-content;
+    height: fit-content;
+}
+.imagem video{
+    max-width: 612px;
+    max-height: 612px;
+    width: fit-content;
+    height: fit-content;
+}
+.post .bottom{
+    width:612px;
+    display: flex;
+    margin-bottom: 10px;
+    /* background-color: black; */
+}
+.bottom .icons{
+    /* background-color: green; */
+    width: 96px;
+    font-size: 22px;
+    margin: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom .marcador{
+    /* background-color: red; */
+    font-size: 22px;
+    margin-left: 450px;
+    margin-top: 12px;
+}
+.post .curtidoPor{
+    /* background-color: red; */
+    width: auto;
+    height: 21px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 17px;
+    bottom: 14px;
+    color: #000000;
+}
+.curtidoPor img{
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+.curtidoPor strong{
+    font-weight: 500;
+}
+
+/* Etilo sidebar */
+
+.sidebar{
+    /* background-color: darkblue; */
+    background-color: rgba(255, 255, 255, 0);
+    width: 293px;
+    height: auto;
+    position: fixed;
+    top: 111px;
+    left: calc(100vw - 30vw);
+    display: block;
+}
+.sidebar #usuario{
+    width: 182px;
+    height: 34px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #262626;
+}
+.sidebar #profile{
+    display: flex;
+    align-items: center;
+}
+.sidebar #profile img{
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    margin-right: 17px;
+}
+.sidebar #username{
+    font-weight: 500;
+}
+.sidebar #name{
+    font-weight: 300;
+}
+.sidebar #sugestao{
+    /* position: absolute; */
+    width: 100%;
+    height: 15px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #8E8E8E;
+}
+.sidebar #verTudo{
+    /* position: absolute; */
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 120px;
+    color: #262626;
+}
+.sidebar #sobre{
+    /* position: absolute; */
+    width: 300px;
+    height: 42px;
+    font-family: Roboto;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    color: #C7C7C7;
+}
+.sidebar #instagram{
+    position: absolute;
+    width: 300px;
+    height: 14px;
+    font-family: Roboto;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    color: #C7C7C7;
+}
+
+
+/* Display responsivo */
+
+@media(max-width: 935px){
+    .sidebar{
+        display: none;
+    }
+    .stories{
+        margin-right: 0;
+    }
+    #posts{
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 614px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header #logo{
+        display: block;
+        width: 103px;
+        height: 29px;
+    }
+    header #right{
+        display: none;
+    }
+    header #left{
+        display: none;
+    }
+    header #barraPesquisa{
+        display: none;
+    }
+    .stories{
+        width: 100%;
+        margin-top: 0;
+    }
+    .posts{
+        width: 100%;
+    }
+}
