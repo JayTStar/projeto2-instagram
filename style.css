@@ -300,6 +300,10 @@ header #right{
     align-items: center;
     color: #262626;
 }
+.suggestionUser .username:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 .suggestionUser .status{
     width: 143px;
     height: 11px;
@@ -355,6 +359,16 @@ header #right{
     color: #C7C7C7;
 }
 
+/* Estilo do cursor */
+
+.sidebar .seguir:hover, .suggestionUser img:hover, .stories .user:hover, .post .profile:hover, .stories #seta:hover, .sidebar #username:hover{
+    cursor: pointer;
+}
+
+ion-icon:hover{
+    cursor:pointer;
+    color: gray;
+}
 
 /* Display responsivo */
 
