@@ -71,6 +71,7 @@ header #right{
     height: 118px;
     margin-top: 34px;
     margin-right: 200px;
+    padding-left: 11px;
     background: #FFFFFF;
     border: 1px solid #DBDBDB;
     box-sizing: border-box;
@@ -78,17 +79,38 @@ header #right{
     overflow: hidden;
     z-index: 2;
 }
-.stories #imagens{
+.stories #users{
     display: flex;
-    z-index: 3;
+    z-index: 2;
 }
-.stories img{
-    width: 66px;
-    height: 66px;
-    border-radius: 33px;
-    margin: 0 7px;
-    margin-top: 18px;
-    z-index: 3;
+.stories .user{
+    max-width: 66px;
+    max-height: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 18px 7px;
+}
+.stories .profile{
+    width: 63px;
+    height: 63px;
+    padding: 5px;
+    border-radius: 35px;
+    background-image: url(./midias/stories_background.jpg);
+    background-position: center;
+    background-size: contain;
+}
+.stories .username{
+    /* background-color: red; */
+    width: 58px;
+    height: 19px;
+    box-sizing: initial;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 14px;
+    color: #262626;
+    overflow: hidden;
+    text-overflow:    ellipsis;
 }
 .stories #seta{
     font-size: 26px;
@@ -97,7 +119,6 @@ header #right{
     bottom: 46px;
     right: 9px;
     color: white;
-    z-index: 4;
 }
 
 /* Estilo dos posts */
@@ -362,10 +383,13 @@ header #right{
         left: 0;
         top: 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         position: fixed;
         z-index: 5;
+    }
+    #mobile ion-icon{
+        margin: 20px;
     }
     .stories{
         width: 100%;
