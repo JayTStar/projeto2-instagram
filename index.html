@@ -12,22 +12,29 @@
   </head>
   <body>
       <header>
-            <div id="left">
-                <ion-icon name="logo-instagram"></ion-icon>
-                <div id="barraHorizontal"></div>
-                <img id="logo" src="../midias/logo.png">
+            <div id="desktop">
+                <div id="left">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <div id="barraHorizontal"></div>
+                    <img id="logo" src="./midias/logo.png">
+                </div>
+                <div id="barraPesquisa"> <p>Pesquisar</p> </div>
+                <div id="right">
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                    <ion-icon name="compass-outline"></ion-icon>
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
             </div>
-            <div id="barraPesquisa"> <p>Pesquisar</p> </div>
-            <div id="right">
+            <div id="mobile">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <img id="logo" src="./midias/logo.png">
                 <ion-icon name="paper-plane-outline"></ion-icon>
-                <ion-icon name="compass-outline"></ion-icon>
-                <ion-icon name="heart-outline"></ion-icon>
-                <ion-icon name="person-outline"></ion-icon>
             </div>
       </header>
       <div id="conteudo">
             <div class="stories">
-                <div>
+                <div id="imagens">
                     <img src="../midias/stories_background.jpg">
                     <img src="../midias/stories_background.jpg">
                     <img src="../midias/stories_background.jpg">
@@ -158,16 +165,56 @@
                         </p>
                 </div>
                 <p id="sugestao">Sugestões para você <span id="verTudo">Ver tudo</span></p>
+
+                <!-- Usuario 1 -->
                 <div class="suggestionUser">
-                    <img src="" alt="">
-                    <p>User.name</p>
-                    <p>Segue você</p>
-                    <p>Seguir</p>
+                    <img src="./midias/suggestions/Bruno.jpg">
+                    <div>
+                        <p class="username">Bruno.Madrigal</p>
+                        <p class="status">Segue você</p>
+                    </div>
+                    <p class="seguir">Seguir</p>
                 </div>
-                <div class="suggestionUser">User2</div>
-                <div class="suggestionUser">User3</div>
-                <div class="suggestionUser">User4</div>
-                <div class="suggestionUser">User5</div>
+
+                <!-- Usuario 2 -->
+                <div class="suggestionUser">
+                    <img src="./midias/suggestions/Agustin.jpg">
+                    <div>
+                        <p class="username">Agustin.Madrigal</p>
+                        <p class="status">Sugestões para você</p>
+                    </div>
+                    <p class="seguir">Seguir</p>
+                </div>
+
+                <!-- Usuario 3 -->
+                <div class="suggestionUser">
+                    <img src="./midias/suggestions/Antonio.jpg">
+                    <div>
+                        <p class="username">Antonio.Madrigal</p>
+                        <p class="status">Novo no Instagram</p>
+                    </div>
+                    <p class="seguir">Seguir</p>
+                </div>
+
+                <!-- Usuario 4 -->
+                <div class="suggestionUser">
+                    <img src="./midias/suggestions/423633.png">
+                    <div>
+                        <p class="username">Pico</p>
+                        <p class="status">Segue você</p>
+                    </div>
+                    <p class="seguir">Seguir</p>
+                </div>
+
+                <!-- Usuario 5 -->
+                <div class="suggestionUser">
+                    <img src="./midias/suggestions/felix.jpg">
+                    <div>
+                        <p class="username">Felix.Madrigal</p>
+                        <p class="status">Sugestões para você</p>
+                    </div>
+                    <p class="seguir">Seguir</p>
+                </div>
                 <p id="sobre">
                     Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •
                     Termos • Localizações • Contas mais relevantes • Hashtags • 
