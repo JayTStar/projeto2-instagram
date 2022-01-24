@@ -150,6 +150,12 @@ header #right{
     font-size: 14px;
     line-height: 16px;
 }
+.profile ion-icon{
+    font-size: 16px;
+    position: absolute;
+    right: 17px;
+    top: 23px;
+}
 .post .profile img{
     width: 40px;
     height: 40px;
